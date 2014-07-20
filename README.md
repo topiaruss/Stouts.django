@@ -3,7 +3,7 @@ Stouts.django
 
 [![Build Status](https://travis-ci.org/Stouts/Stouts.django.png)](https://travis-ci.org/Stouts/Stouts.django)
 
-Ansible role whith setup Django projects.
+Ansible role to set up Django projects.
 
 
 #### Requirements & Dependencies
@@ -15,7 +15,7 @@ Ansible role whith setup Django projects.
 
 ```yaml
 django_enabled: yes                           # The role is enabled
-
+django_base_project_name: project             # Name of subdirectory containing the manage.py command
 django_manage_list:                           # List of commands which will be executed
   - collectstatic
   - syncdb
